@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Whodis - Check Before You Pay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { 
+            theme: { 
+                extend: { 
+                    colors: { 
+                        "base-bg": "#f8fafc",
+                        "card-bg": "#ffffff",
+                        "primary-text": "#0f172a",
+                        "muted-text": "#64748b",
+                        "danger": "#ef4444",
+                        "success": "#10b981",
+                        "warning": "#facc15",
+                        "dark-badge": "#1e293b"
+                    },
+                    fontFamily: { "sans": ["Inter", "Noto Sans Thai", "sans-serif"] }
+                } 
+            } 
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+    <style>
+        .nav-link {
+            padding: 0.5rem 1rem;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 9999px;
+            transition: all 0.2s ease;
+        }
+        .nav-link:hover {
+            background-color: #f1f5f9;
+            color: #0f172a;
+        }
+        .nav-link.active {
+            background-color: #1e293b;
+            color: #ffffff;
+        }
+        .btn-green-solid {
+            background-color: #10b981;
+            color: #ffffff;
+            padding: 0.5rem 1.4rem;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 9999px;
+            transition: all 0.2s ease;
+            display: inline-block;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+        .btn-green-solid:hover {
+            background-color: #059669;
+        }
+    </style>
+</head>
+<body class="font-sans text-primary-text bg-base-bg antialiased">
+    <header class="w-full bg-card-bg border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-[1200px] mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary-text text-white rounded-full flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[18px]">verified_user</span>
+                </div>
+                <span class="text-[18px] font-bold text-primary-text">Whodis</span>
+            </a>
+            
+            <nav class="hidden lg:flex items-center gap-1">
+                <a href="/" class="nav-link <%= (locals.current_page == 'index.php' || !locals.current_page) ? 'active' : 'text-muted-text' %>">เช็กก่อนโอน</a>
+                <a href="/checker" class="nav-link <%= (locals.current_page == 'checker.php') ? 'active' : 'text-muted-text' %>">Scam Checker</a>
+                <a href="/report" class="nav-link <%= (locals.current_page == 'report.php') ? 'active' : 'text-muted-text' %>">แจ้งมิจฉาชีพ</a>
+                <a href="/stats" class="nav-link <%= (locals.current_page == 'stats.php') ? 'active' : 'text-muted-text' %>">สถิติ Scam</a>
+                <a href="/knowledge" class="nav-link <%= (locals.current_page == 'knowledge.php') ? 'active' : 'text-muted-text' %>">รู้จักการโกง</a>
+                <a href="/emergency" class="nav-link <%= (locals.current_page == 'emergency.php') ? 'active' : 'text-muted-text' %>">ถูกโกงแล้วทำไง</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <% if (locals.user) { %>
+                    <span class="text-[13px] font-medium hidden md:inline">สวัสดี, <%= user.username %></span>
+                    <a href="/logout" class="text-muted-text hover:text-danger flex items-center" title="ออกจากระบบ"><span class="material-symbols-outlined text-[20px]">logout</span></a>
+                <% } else { %>
+                    <a href="/login" class="btn-green-solid">เข้าสู่ระบบ</a>
+                <% } %>
+            </div>
+        </div>
+    </header>

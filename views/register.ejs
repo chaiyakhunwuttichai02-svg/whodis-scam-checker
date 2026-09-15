@@ -1,0 +1,79 @@
+<%- include('header') %>
+
+<main class="w-full pt-12 pb-24 bg-base-bg flex items-center justify-center">
+    <div class="max-w-[440px] w-full mx-auto px-4">
+        
+        <!-- หัวข้อหน้า Register -->
+        <div class="text-center mb-8">
+            <div class="w-12 h-12 bg-success text-white rounded-2xl mx-auto flex items-center justify-center mb-4 shadow-sm">
+                <span class="material-symbols-outlined text-[24px]">person_add</span>
+            </div>
+            <h1 class="text-[28px] font-bold text-primary-text mb-2">สร้างบัญชีผู้ใช้ใหม่</h1>
+            <p class="text-muted-text text-[14px]">ร่วมเป็นส่วนหนึ่งในการปกป้องและแจ้งเตือนภัยมิจฉาชีพ</p>
+        </div>
+
+        <!-- กล่องฟอร์ม Register -->
+        <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm">
+            
+            <% if (error) { %>
+                <div class="mb-6 p-4 bg-red-50 border border-red-200 text-danger rounded-xl text-[14px] flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[20px]">error</span>
+                    <span><%= error %></span>
+                </div>
+            <% } %>
+
+            <% if (success) { %>
+                <div class="mb-6 p-4 bg-emerald-50 border border-emerald-200 text-emerald-600 rounded-xl text-[14px] flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[20px]">check_circle</span>
+                    <span><%= success %></span>
+                </div>
+            <% } %>
+
+            <form action="/register" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-[13px] font-semibold text-primary-text mb-1.5">ชื่อผู้ใช้ (Username)</label>
+                    <input type="text" name="username" required class="w-full h-[46px] px-4 bg-gray-50 border border-gray-200 rounded-xl text-[14px] focus:outline-none focus:border-primary-text focus:bg-white transition-colors" placeholder="ตั้งชื่อผู้ใช้ของคุณ">
+                </div>
+
+                <div>
+                    <label class="block text-[13px] font-semibold text-primary-text mb-1.5">อีเมล (Email)</label>
+                    <input type="email" name="email" required class="w-full h-[46px] px-4 bg-gray-50 border border-gray-200 rounded-xl text-[14px] focus:outline-none focus:border-primary-text focus:bg-white transition-colors" placeholder="name@example.com">
+                </div>
+
+                <div>
+                    <label class="block text-[13px] font-semibold text-primary-text mb-1.5">รหัสผ่าน (Password)</label>
+                    <input type="password" name="password" required class="w-full h-[46px] px-4 bg-gray-50 border border-gray-200 rounded-xl text-[14px] focus:outline-none focus:border-primary-text focus:bg-white transition-colors" placeholder="อย่างน้อย 6 ตัวอักษร">
+                </div>
+
+                <div>
+                    <label class="block text-[13px] font-semibold text-primary-text mb-1.5">ยืนยันรหัสผ่าน</label>
+                    <input type="password" name="confirm_password" required class="w-full h-[46px] px-4 bg-gray-50 border border-gray-200 rounded-xl text-[14px] focus:outline-none focus:border-primary-text focus:bg-white transition-colors" placeholder="กรอกรหัสผ่านอีกครั้ง">
+                </div>
+
+                <button type="submit" class="w-full h-[50px] bg-primary-text hover:bg-gray-800 text-white text-[15px] font-bold rounded-xl shadow-md transition-transform hover:scale-[1.01] flex items-center justify-center gap-2 mt-4">
+                    สมัครสมาชิก <span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+                </button>
+            </form>
+
+            <div class="mt-8 text-center pt-6 border-t border-gray-100">
+                <p class="text-[14px] text-muted-text">
+                    มีบัญชีอยู่แล้ว? <a href="/login" class="font-bold text-primary-text hover:underline">เข้าสู่ระบบที่นี่</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="w-full pb-8 pt-4 border-t border-gray-200 mt-auto">
+    <div class="max-w-[1000px] mx-auto px-4 text-center">
+        <div class="flex items-center justify-center gap-1 mb-2">
+            <span class="material-symbols-outlined text-[16px] text-primary-text">verified_user</span>
+            <span class="font-bold text-[14px] text-primary-text">Whodis</span>
+        </div>
+        <p class="text-[12px] text-muted-text">Check Before You Pay — เช็กก่อนโอนทุกครั้ง ป้องกันดีกว่าแก้</p>
+    </div>
+</footer>
+
+</body>
+</html>

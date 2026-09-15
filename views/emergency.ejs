@@ -1,0 +1,154 @@
+<%- include('header') %>
+
+<main class="w-full pt-10 pb-20 bg-base-bg">
+    <div class="max-w-[800px] mx-auto px-4">
+        
+        <div class="text-center mb-8 flex flex-col items-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-red-50 text-danger text-[13px] font-semibold rounded-full mb-4 border border-red-200 shadow-sm">
+                <span class="material-symbols-outlined text-[16px]">warning</span> Emergency Flow
+            </div>
+            <h1 class="text-[32px] md:text-[40px] font-bold text-primary-text flex items-center gap-3 mb-2">
+                <span class="bg-danger text-white text-[20px] px-2.5 py-1 rounded-lg tracking-wider">SOS</span> ถูกโกงแล้วทำไง?
+            </h1>
+            <p class="text-muted-text text-[15px]">ขั้นตอนช่วยเหลือเร่งด่วน ทำตามลำดับ อย่าตื่นเต้น</p>
+        </div>
+
+        <a href="tel:1441" class="w-full bg-danger hover:bg-danger-hover text-white rounded-3xl p-6 md:p-8 flex items-center justify-between mb-10 shadow-lg transition-transform hover:scale-[1.01]">
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-[32px]">call</span>
+                </div>
+                <div class="text-left">
+                    <h2 class="text-[22px] md:text-[24px] font-bold leading-tight">โทรแจ้งไซเบอร์ทันที</h2>
+                    <p class="text-white/90 text-[14px] mt-1">หากกำลังถูกหลอกหรือเพิ่งโดนโกง</p>
+                </div>
+            </div>
+            <div class="bg-white text-danger font-bold text-[28px] md:text-[32px] px-6 py-3 rounded-2xl shadow-sm">
+                1441
+            </div>
+        </a>
+
+        <div class="space-y-4 mb-12">
+            
+            <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-primary-text text-white flex items-center justify-center shrink-0 font-bold">
+                        1
+                    </div>
+                    <div>
+                        <span class="text-[11px] font-bold text-muted-text uppercase tracking-wider">ขั้นที่ 1</span>
+                        <h3 class="text-[17px] font-bold text-primary-text mb-1">หยุดโอนเงินเพิ่มเติม</h3>
+                        <p class="text-[14px] text-muted-text">หยุดทุกการโอนเงินทันที ไม่ว่าจะถูกขอร้องหรือกดดันอย่างไร อย่าโอนเพิ่มเด็ดขาด</p>
+                    </div>
+                </div>
+                <span class="bg-gray-100 text-primary-text text-[13px] font-bold px-4 py-2 rounded-xl whitespace-nowrap self-end sm:self-center">หยุดทันที</span>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-primary-text text-white flex items-center justify-center shrink-0 font-bold">
+                        2
+                    </div>
+                    <div>
+                        <span class="text-[11px] font-bold text-muted-text uppercase tracking-wider">ขั้นที่ 2</span>
+                        <h3 class="text-[17px] font-bold text-primary-text mb-1">ติดต่อธนาคาร</h3>
+                        <p class="text-[14px] text-muted-text">โทรแจ้งธนาคารที่โอนเงินออก ขอระงับบัญชีปลายทางและพยายามเรียกเงินคืน</p>
+                    </div>
+                </div>
+                <a href="tel:1333" class="bg-gray-100 hover:bg-gray-200 text-primary-text text-[13px] font-bold px-4 py-2 rounded-xl whitespace-nowrap self-end sm:self-center transition-colors">โทรธนาคาร</a>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-primary-text text-white flex items-center justify-center shrink-0 font-bold">
+                        3
+                    </div>
+                    <div>
+                        <span class="text-[11px] font-bold text-muted-text uppercase tracking-wider">ขั้นที่ 3</span>
+                        <h3 class="text-[17px] font-bold text-primary-text mb-1">เก็บหลักฐาน</h3>
+                        <p class="text-[14px] text-muted-text">เซฟ screenshot แชท, สลิปโอนเงิน, เบอร์โทร, เลขบัญชี, ชื่อผู้รับ ไว้ทั้งหมด</p>
+                    </div>
+                </div>
+                <span class="bg-gray-100 text-primary-text text-[13px] font-bold px-4 py-2 rounded-xl whitespace-nowrap self-end sm:self-center">เก็บหลักฐาน</span>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-danger text-white flex items-center justify-center shrink-0 font-bold shadow-md">
+                        4
+                    </div>
+                    <div>
+                        <span class="text-[11px] font-bold text-danger uppercase tracking-wider">ขั้นที่ 4</span>
+                        <h3 class="text-[17px] font-bold text-primary-text mb-1">แจ้งหน่วยงานที่เกี่ยวข้อง</h3>
+                        <p class="text-[14px] text-muted-text">แจ้งความ สภ. หรือ โทร 1441 ศูนย์รับแจ้งการกระทำความผิดทางไซเบอร์</p>
+                    </div>
+                </div>
+                <a href="tel:1441" class="bg-red-50 hover:bg-red-100 text-danger text-[13px] font-bold px-4 py-2 rounded-xl whitespace-nowrap self-end sm:self-center transition-colors">โทร 1441</a>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-primary-text text-white flex items-center justify-center shrink-0 font-bold">
+                        5
+                    </div>
+                    <div>
+                        <span class="text-[11px] font-bold text-muted-text uppercase tracking-wider">ขั้นที่ 5</span>
+                        <h3 class="text-[17px] font-bold text-primary-text mb-1">รายงานลง Whodis</h3>
+                        <p class="text-[14px] text-muted-text">เพิ่มข้อมูลมิจฉาชีพลงแพลตฟอร์ม เพื่อเตือนคนอื่นไม่ให้โดนต่อ</p>
+                    </div>
+                </div>
+                <a href="/report" class="bg-primary-text hover:bg-gray-800 text-white text-[13px] font-bold px-4 py-2 rounded-xl whitespace-nowrap self-end sm:self-center transition-colors">รายงานเลย</a>
+            </div>
+
+        </div>
+
+        <h3 class="text-[18px] font-bold text-primary-text mb-4">เบอร์ฉุกเฉินที่เกี่ยวข้อง</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+            <a href="tel:1441" class="bg-white border border-gray-200 rounded-2xl p-5 hover:border-gray-400 transition-colors flex flex-col justify-between shadow-sm">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-[13px] font-semibold text-muted-text">ศูนย์รับแจ้งไซเบอร์</span>
+                    <span class="material-symbols-outlined text-[18px] text-gray-400">open_in_new</span>
+                </div>
+                <div class="text-[24px] font-bold text-primary-text mb-1 font-mono">1441</div>
+                <div class="text-[12px] text-muted-text">รับแจ้งการกระทำผิดทางไซเบอร์</div>
+            </a>
+            
+            <a href="tel:1205" class="bg-white border border-gray-200 rounded-2xl p-5 hover:border-gray-400 transition-colors flex flex-col justify-between shadow-sm">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-[13px] font-semibold text-muted-text">ศูนย์ปราบปรามคอร์รัปชั่น</span>
+                    <span class="material-symbols-outlined text-[18px] text-gray-400">open_in_new</span>
+                </div>
+                <div class="text-[24px] font-bold text-primary-text mb-1 font-mono">1205</div>
+                <div class="text-[12px] text-muted-text">แจ้งเบาะแสการกระทำผิด</div>
+            </a>
+
+            <a href="tel:022837777" class="bg-white border border-gray-200 rounded-2xl p-5 hover:border-gray-400 transition-colors flex flex-col justify-between shadow-sm">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-[13px] font-semibold text-muted-text">ธนาคารแห่งประเทศไทย</span>
+                    <span class="material-symbols-outlined text-[18px] text-gray-400">open_in_new</span>
+                </div>
+                <div class="text-[22px] font-bold text-primary-text mb-1 font-mono">0 2283 7777</div>
+                <div class="text-[12px] text-muted-text">สอบถาม/แจ้งธนาคารพาณิชย์</div>
+            </a>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 text-center shadow-sm">
+            <p class="text-[15px] font-bold text-primary-text mb-1">การถูกโกงไม่ใช่ความผิดของคุณ — ยิ่งแจ้งเร็ว ยิ่งมีโอกาสได้เงินคืน</p>
+            <p class="text-[13px] text-muted-text">และการรายงานจะช่วยเตือนคนอื่นไม่ให้โดนต่อ</p>
+        </div>
+
+    </div>
+</main>
+
+<footer class="w-full pb-8 pt-4 border-t border-gray-200 mt-auto">
+    <div class="max-w-[1000px] mx-auto px-4 text-center">
+        <div class="flex items-center justify-center gap-1 mb-2">
+            <span class="material-symbols-outlined text-[16px] text-primary-text">verified_user</span>
+            <span class="font-bold text-[14px] text-primary-text">Whodis</span>
+        </div>
+        <p class="text-[12px] text-muted-text">Check Before You Pay — เช็กก่อนโอนทุกครั้ง ป้องกันดีกว่าแก้</p>
+    </div>
+</footer>
+
+</body>
+</html>

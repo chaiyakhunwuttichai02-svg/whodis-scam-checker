@@ -1,0 +1,337 @@
+<%- include('header') %>
+
+<main class="w-full pt-10 pb-20 bg-base-bg">
+    <div class="max-w-[800px] mx-auto px-4">
+        
+        <div class="text-center mb-10 flex flex-col items-center">
+            <h1 class="text-[32px] md:text-[36px] font-bold text-primary-text flex items-center gap-3 mb-2">
+                📚 Scam Knowledge Center
+            </h1>
+            <p class="text-muted-text text-[15px]">เรียนรู้เพื่อป้องกัน สังเกตสัญญาณอันตรายก่อนเสียเงิน</p>
+        </div>
+
+        <div class="space-y-4 mb-16">
+            
+            <div class="accordion-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="p-5 flex items-center justify-between cursor-pointer" onclick="this.parentElement.classList.toggle('active')">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-red-50 text-danger flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-[20px]">show_chart</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] text-muted-text uppercase tracking-wider font-semibold">Investment Scam</span>
+                            <h3 class="text-[16px] font-bold text-primary-text">การลงทุนที่ "การันตีกำไร" มีจริงไหม?</h3>
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined text-muted-text accordion-icon transition-transform">expand_more</span>
+                </div>
+                <div class="accordion-content border-t border-gray-100 p-6 bg-gray-50/50">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-[14px] font-bold text-danger flex items-center gap-2 mb-3">
+                                <span class="material-symbols-outlined text-[18px]">warning</span> สัญญาณอันตราย
+                            </h4>
+                            <ul class="text-[13px] text-primary-text space-y-2">
+                                <li>• สัญญาผลตอบแทนสูงกว่า 10% ต่อปี หรือ "การันตีกำไร"</li>
+                                <li>• ชวนลงทุนผ่านแชตส่วนตัว LINE/Telegram</li>
+                                <li>• ให้โอนเงินเข้าบัญชีบุคคลธรรมดา</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-[14px] font-bold text-success flex items-center gap-2 mb-3">
+                                <span class="material-symbols-outlined text-[18px]">lightbulb</span> วิธีป้องกัน
+                            </h4>
+                            <ul class="text-[13px] text-primary-text space-y-2">
+                                <li>✓ ตรวจสอบใบอนุญาตจาก ก.ล.ต.</li>
+                                <li>✓ บัญชีลงทุนต้องเป็นชื่อบริษัทหลักทรัพย์เท่านั้น</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="p-5 flex items-center justify-between cursor-pointer" onclick="this.parentElement.classList.toggle('active')">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-[20px]">work</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] text-muted-text uppercase tracking-wider font-semibold">Job Scam</span>
+                            <h3 class="text-[16px] font-bold text-primary-text">งานออนไลน์ที่ให้เงินเดือนสูง ไม่ต้องประสบการณ์</h3>
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined text-muted-text accordion-icon transition-transform">expand_more</span>
+                </div>
+                <div class="accordion-content border-t border-gray-100 p-6 bg-gray-50/50">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-[14px] font-bold text-danger flex items-center gap-2 mb-3">
+                                <span class="material-symbols-outlined text-[18px]">warning</span> สัญญาณอันตราย
+                            </h4>
+                            <ul class="text-[13px] text-primary-text space-y-2">
+                                <li>• งานสบายแต่ได้เงินเดือนหรือค่าตอบแทนสูงเกินจริง</li>
+                                <li>• บังคับให้โอนเงินค่าสมัคร ค่าอุปกรณ์ หรือค่าค้ำประกันก่อนเริ่มงาน</li>
+                                <li>• ติดต่อผ่าน Social Media ส่วนตัว ไม่มีเว็บไซต์บริษัทที่เป็นทางการ</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-[14px] font-bold text-success flex items-center gap-2 mb-3">
+                                <span class="material-symbols-outlined text-[18px]">lightbulb</span> วิธีป้องกัน
+                            </h4>
+                            <ul class="text-[13px] text-primary-text space-y-2">
+                                <li>✓ งานจริงจะไม่เรียกเก็บเงินค่าสมัครหรือค่าใช้จ่ายล่วงหน้า</li>
+                                <li>✓ ตรวจสอบความน่าเชื่อถือของบริษัทผ่านช่องทางที่เป็นทางการ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="p-5 flex items-center justify-between cursor-pointer" onclick="this.parentElement.classList.toggle('active')">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-[20px]">phishing</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] text-muted-text uppercase tracking-wider font-semibold">Phishing</span>
+                            <h3 class="text-[16px] font-bold text-primary-text">ลิงก์แอบอ้างธนาคาร ขโมยข้อมูลบัญชี</h3>
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined text-muted-text accordion-icon transition-transform">expand_more</span>
+                </div>
+                <div class="accordion-content border-t border-gray-100 p-6 bg-gray-50/50">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-[14px] font-bold text-danger flex items-center gap-2 mb-3">
+                                <span class="material-symbols-outlined text-[18px]">warning</span> สัญญาณอันตราย
+                            </h4>
+                            <ul class="text-[13px] text-primary-text space-y-2">
+                                <li>• ส่ง SMS แจ้งเตือนว่าบัญชีมีปัญหา ให้รีบกดลิงก์ยืนยันตัวตน</li>
+                                <li>• URL เว็บไซต์มีความแปลกปลอม (สะกดผิด หรือไม่ใช่โดเมนหลักของหน่วยงาน)</li>
+                                <li>• เร่งรัดให้กรอกรหัสผ่าน หรือรหัส OTP ทันที</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-[14px] font-bold text-success flex items-center gap-2 mb-3">
+                                <span class="material-symbols-outlined text-[18px]">lightbulb</span> วิธีป้องกัน
+                            </h4>
+                            <ul class="text-[13px] text-primary-text space-y-2">
+                                <li>✓ ธนาคารหรือหน่วยงานรัฐไม่มีนโยบายส่ง SMS ให้กดลิงก์เพื่อกรอกข้อมูล</li>
+                                <li>✓ เข้าใช้งานผ่านแอปพลิเคชันทางการหรือพิมพ์ URL ด้วยตนเองเท่านั้น</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                <div class="p-5 flex items-center justify-between cursor-pointer" onclick="this.parentElement.classList.toggle('active')">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-pink-50 text-pink-600 flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-[20px]">favorite</span>
+                        </div>
+                        <div>
+                            <span class="text-[11px] text-muted-text uppercase tracking-wider font-semibold">Romance Scam</span>
+                            <h3 class="text-[16px] font-bold text-primary-text">คนรู้ใจออนไลน์ที่ขอเงิน</h3>
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined text-muted-text accordion-icon transition-transform">expand_more</span>
+                </div>
+                <div class="accordion-content border-t border-gray-100 p-6 bg-gray-50/50">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-[14px] font-bold text-danger flex items-center gap-2 mb-3">
+                                <span class="material-symbols-outlined text-[18px]">warning</span> สัญญาณอันตราย
+                            </h4>
+                            <ul class="text-[13px] text-primary-text space-y-2">
+                                <li>• คุยแบบเร็ว แต่ปฏิเสธการวิดีโอคอล</li>
+                                <li>• มีเหตุฉุกเฉินทางการเงินต้องให้โอนช่วย</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-[14px] font-bold text-success flex items-center gap-2 mb-3">
+                                <span class="material-symbols-outlined text-[18px]">lightbulb</span> วิธีป้องกัน
+                            </h4>
+                            <ul class="text-[13px] text-primary-text space-y-2">
+                                <li>✓ อย่าโอนเงินให้คนที่ยังไม่เคยเจอตัวจริง</li>
+                                <li>✓ ค้นหารูปภาพโปรไฟล์ใน Google Images</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="quiz-section" class="bg-primary-text text-white rounded-3xl p-6 md:p-10 shadow-xl text-center">
+            <div class="flex items-center justify-center gap-3 mb-2">
+                <span class="material-symbols-outlined text-[#fbbf24] text-[32px]">emoji_objects</span>
+                <h2 class="text-[22px] font-bold">Quiz ทดสอบสัญชาตญาณรู้เท่าทันมิจฉาชีพ</h2>
+            </div>
+            <p class="text-[14px] text-gray-300 mb-6">ลองทำแบบทดสอบ 5 ข้อเพื่อดูว่าคุณจะป้องกันตัวเองจากภัยไซเบอร์ได้ดีแค่ไหน</p>
+            
+            <button id="startQuizBtn" class="bg-white text-primary-text font-bold text-[15px] px-8 py-3.5 rounded-xl hover:bg-gray-100 transition-colors shadow-md">
+                เริ่มทำ Quiz
+            </button>
+
+            <div id="quiz-content-wrapper" class="hidden text-left mt-8 space-y-8">
+                <div class="space-y-8">
+                    
+                    <div class="quiz-question bg-white/5 border border-white/10 rounded-2xl p-6" data-answer="1">
+                        <h3 class="text-[16px] font-bold mb-4 text-white">ข้อ 1: มีคนแปลกหน้าส่งข้อความชวนลงทุนโดย "การันตีกำไร 30% ต่อเดือน" คุณควรทำอย่างไร?</h3>
+                        <div class="space-y-2.5">
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q1" value="0" class="mr-2"> ลองลงทุนด้วยเงินจำนวนน้อยๆ ก่อน
+                            </label>
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q1" value="1" class="mr-2"> ไม่สนใจ และรายงานหรือเช็กข้อมูลใน Whodis
+                            </label>
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q1" value="0" class="mr-2"> แชร์ต่อให้เพื่อนๆ ในกลุ่มช่วยดู
+                            </label>
+                        </div>
+                        <div class="quiz-feedback mt-3 text-[13px] font-semibold hidden"></div>
+                    </div>
+
+                    <div class="quiz-question bg-white/5 border border-white/10 rounded-2xl p-6" data-answer="1">
+                        <h3 class="text-[16px] font-bold mb-4 text-white">ข้อ 2: ได้รับ SMS แจ้งว่าบัญชีธนาคารผิดปกติ พร้อมแนบลิงก์ให้คลิกเพื่อยืนยันตัวตน คุณควรทำอย่างไร?</h3>
+                        <div class="space-y-2.5">
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q2" value="0" class="mr-2"> รีบคลิกลิงก์และกรอกข้อมูลทันทีกลัวบัญชีถูกปิด
+                            </label>
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q2" value="1" class="mr-2"> เมินเฉยต่อ SMS และเปิดแอปธนาคารหรือโทรหาเบอร์ทางการด้วยตนเอง
+                            </label>
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q2" value="0" class="mr-2"> ส่งต่อลิงก์ให้คนอื่นช่วยเช็ก
+                            </label>
+                        </div>
+                        <div class="quiz-feedback mt-3 text-[13px] font-semibold hidden"></div>
+                    </div>
+
+                    <div class="quiz-question bg-white/5 border border-white/10 rounded-2xl p-6" data-answer="2">
+                        <h3 class="text-[16px] font-bold mb-4 text-white">ข้อ 3: สมัครงานออนไลน์ได้เงินเดือนสูง ไม่ต้องประสบการณ์ แต่บริษัทขอให้โอนเงินค่าสมัคร 500 บาทก่อน ควรทำอย่างไร?</h3>
+                        <div class="space-y-2.5">
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q3" value="0" class="mr-2"> โอนเลย 500 บาทถือว่าน้อยมากเทียบกับเงินเดือน
+                            </label>
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q3" value="0" class="mr-2"> ต่อรองขอจ่ายหักจากเงินเดือนงวดแรก
+                            </label>
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q3" value="2" class="mr-2"> ไม่โอนเด็ดขาด เพราะงานจริงไม่มีนโยบายเก็บเงินค่าสมัครก่อนทำงาน
+                            </label>
+                        </div>
+                        <div class="quiz-feedback mt-3 text-[13px] font-semibold hidden"></div>
+                    </div>
+
+                    <div class="quiz-question bg-white/5 border border-white/10 rounded-2xl p-6" data-answer="0">
+                        <h3 class="text-[16px] font-bold mb-4 text-white">ข้อ 4: คุยกับชาวต่างชาติหน้าตาดีในแอปหาคู่มาสักพัก แต่อีกฝ่ายปฏิเสธการวิดีโอคอลทุกครั้งและเริ่มขอยืมเงิน คุณควรทำอย่างไร?</h3>
+                        <div class="space-y-2.5">
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q4" value="0" class="mr-2"> ตัดสินใจบล็อกทันทีเข้าข่าย Romance Scam
+                            </label>
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q4" value="1" class="mr-2"> โอนเงินให้ช่วยเหลือเล็กน้อยเพราะเขาอาจเดือดร้อนจริง
+                            </label>
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q4" value="2" class="mr-2"> รอให้เขามาหาที่ไทยก่อนค่อยให้เงิน
+                            </label>
+                        </div>
+                        <div class="quiz-feedback mt-3 text-[13px] font-semibold hidden"></div>
+                    </div>
+
+                    <div class="quiz-question bg-white/5 border border-white/10 rounded-2xl p-6" data-answer="1">
+                        <h3 class="text-[16px] font-bold mb-4 text-white">ข้อ 5: หากคุณเผลอโอนเงินให้มิจฉาชีพไปแล้ว สิ่งแรกที่คุณควรทำคืออะไรตามหลัก Emergency Flow?</h3>
+                        <div class="space-y-2.5">
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q5" value="0" class="mr-2"> นั่งรอให้ตำรวจติดต่อกลับมาเอง
+                            </label>
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q5" value="1" class="mr-2"> โทรแจ้งธนาคารต้นทางทันทีเพื่อระงับบัญชี และโทรสายด่วน 1441
+                            </label>
+                            <label class="block p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors border border-transparent">
+                                <input type="radio" name="q5" value="2" class="mr-2"> ทักไปต่อว่ามิจฉาชีพคนนั้นในแชต
+                            </label>
+                        </div>
+                        <div class="quiz-feedback mt-3 text-[13px] font-semibold hidden"></div>
+                    </div>
+
+                </div>
+
+                <div class="mt-8 text-center">
+                    <button id="submitQuiz" class="bg-white text-primary-text font-bold text-[15px] px-8 py-3.5 rounded-xl hover:bg-gray-100 transition-colors shadow-md">
+                        ตรวจคำตอบ Quiz
+                    </button>
+                    <div id="quiz-result" class="mt-4 text-[16px] font-bold text-[#fbbf24] hidden"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+<style>
+    .accordion-content { display: none; }
+    .accordion-item.active .accordion-content { display: block; }
+    .accordion-item.active .accordion-icon { transform: rotate(180deg); }
+</style>
+
+<script>
+    document.getElementById('startQuizBtn').addEventListener('click', function() {
+        this.classList.add('hidden');
+        document.getElementById('quiz-content-wrapper').classList.remove('hidden');
+    });
+
+    document.getElementById('submitQuiz').addEventListener('click', function() {
+        const questions = document.querySelectorAll('.quiz-question');
+        let score = 0;
+        let answeredCount = 0;
+
+        questions.forEach((q, index) => {
+            const selected = q.querySelector('input[type="radio"]:checked');
+            const feedback = q.querySelector('.quiz-feedback');
+            feedback.classList.remove('hidden');
+
+            if (selected) {
+                answeredCount++;
+                const val = parseInt(selected.value);
+                const correctVal = parseInt(q.getAttribute('data-answer'));
+
+                if (val === correctVal) {
+                    score++;
+                    feedback.textContent = "✅ ถูกต้อง! คุณเลือกแนวทางที่ปลอดภัย";
+                    feedback.className = "quiz-feedback mt-3 text-[13px] font-semibold text-emerald-400";
+                } else {
+                    feedback.textContent = "❌ ยังไม่ถูกต้อง ลองศึกษาวิธีป้องกันในด้านบนดูอีกครั้งนะ";
+                    feedback.className = "quiz-feedback mt-3 text-[13px] font-semibold text-red-400";
+                }
+            } else {
+                feedback.textContent = "⚠️ คุณยังไม่ได้เลือกคำตอบข้อนี้";
+                feedback.className = "quiz-feedback mt-3 text-[13px] font-semibold text-amber-400";
+            }
+        });
+
+        if (answeredCount > 0) {
+            const resultDiv = document.getElementById('quiz-result');
+            resultDiv.classList.remove('hidden');
+            resultDiv.textContent = `🎉 คุณทำคะแนนได้ ${score} จาก ${questions.length} คะแนน!`;
+        }
+    });
+</script>
+
+<footer class="w-full pb-8 pt-4 border-t border-gray-200 mt-auto">
+    <div class="max-w-[1000px] mx-auto px-4 text-center">
+        <div class="flex items-center justify-center gap-1 mb-2">
+            <span class="material-symbols-outlined text-[16px] text-primary-text">verified_user</span>
+            <span class="font-bold text-[14px] text-primary-text">Whodis</span>
+        </div>
+        <p class="text-[12px] text-muted-text">Check Before You Pay — เช็กก่อนโอนทุกครั้ง ป้องกันดีกว่าแก้</p>
+    </div>
+</footer>
+
+</body>
+</html>

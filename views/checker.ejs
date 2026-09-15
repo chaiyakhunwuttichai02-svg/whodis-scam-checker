@@ -1,0 +1,79 @@
+<%- include('header') %>
+
+<main class="w-full pt-10 pb-20">
+    <div class="max-w-[700px] mx-auto px-4">
+        
+        <!-- หัวข้อหน้าเว็บ -->
+        <div class="text-center mb-8">
+            <h1 class="text-[32px] md:text-[40px] font-bold text-primary-text mb-2">Scam Checker</h1>
+            <p class="text-muted-text text-[15px]">ตรวจสอบเบอร์โทร เลขบัญชี พร้อมเพย์ URL หรือชื่อ ก่อนโอนเงิน</p>
+        </div>
+
+        <!-- กล่องเนื้อหาหลัก -->
+        <div class="bg-white border border-gray-200 rounded-3xl p-6 md:p-10 shadow-sm">
+            
+            <!-- ส่วนที่ 1: ค้นหาด้วยข้อความ -->
+            <div class="mb-8">
+                <label class="block text-[15px] font-bold text-primary-text mb-3">เบอร์โทร / เลขบัญชี / พร้อมเพย์ / URL / ชื่อ</label>
+                <div class="relative">
+                    <input type="text" class="w-full h-[54px] px-4 bg-gray-50 border border-gray-200 rounded-xl text-[15px] focus:outline-none focus:border-primary-text focus:ring-1 focus:ring-primary-text transition-colors" placeholder="พิมพ์ข้อมูลที่ต้องการตรวจสอบลงที่นี่...">
+                </div>
+                
+                <!-- ปุ่มแนะนำ (ลองกด) -->
+                <div class="mt-4 flex flex-wrap items-center gap-2 text-[13px] text-muted-text">
+                    <span class="font-medium mr-1">ลอง:</span>
+                    <button class="bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-full transition-colors border border-gray-200">081-234-5678</button>
+                    <button class="bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-full transition-colors border border-gray-200">123-4-56789-0</button>
+                    <button class="bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-full transition-colors border border-gray-200">062-345-6789</button>
+                </div>
+            </div>
+
+            <!-- เส้นคั่นแบ่งโซน AI -->
+            <div class="flex items-center gap-4 my-10">
+                <div class="h-px bg-gray-200 flex-1"></div>
+                <div class="text-[14px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[18px] text-blue-500">auto_awesome</span> AI วิเคราะห์ Screenshot แชต
+                </div>
+                <div class="h-px bg-gray-200 flex-1"></div>
+            </div>
+
+            <!-- ส่วนที่ 2: อัปโหลดรูปภาพให้ AI -->
+            <div class="mb-8 text-center">
+                <p class="text-[14px] text-muted-text mb-5">อัปโหลดภาพหน้าจอแชต หรือสลิปโอนเงิน แล้วให้ AI วิเคราะห์สัญญาณอันตรายให้</p>
+                
+                <!-- กล่องอัปโหลดไฟล์ (ลากวางได้) -->
+                <label class="block w-full border-2 border-dashed border-gray-300 hover:border-blue-400 bg-gray-50 hover:bg-blue-50/50 rounded-2xl p-10 cursor-pointer transition-colors group">
+                    <input type="file" class="hidden" accept="image/jpeg, image/png, image/webp">
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-gray-400 group-hover:text-blue-500 transition-colors">
+                            <span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+                        </div>
+                        <span class="text-[15px] font-bold text-primary-text">คลิกเพื่ออัปโหลดหรือลากไฟล์มาวาง</span>
+                        <span class="text-[13px] text-muted-text">(รองรับไฟล์ JPG, PNG)</span>
+                    </div>
+                </label>
+            </div>
+
+            <!-- ปุ่ม Submit -->
+            <button class="w-full h-[54px] bg-primary-text hover:bg-gray-800 text-white text-[16px] font-bold rounded-xl flex items-center justify-center gap-2 transition-transform hover:scale-[1.01] shadow-md">
+                <span class="material-symbols-outlined text-[20px]">magic_button</span> ให้ AI วิเคราะห์ (ทดลอง)
+            </button>
+        </div>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full pb-8 pt-4 border-t border-gray-200 mt-auto">
+    <div class="max-w-[1000px] mx-auto px-4 text-center">
+        <div class="flex items-center justify-center gap-1 mb-2">
+            <span class="material-symbols-outlined text-[16px] text-primary-text">verified_user</span>
+            <span class="font-bold text-[14px] text-primary-text">Whodis</span>
+        </div>
+        <p class="text-[12px] text-muted-text">Check Before You Pay — เช็กก่อนโอนทุกครั้ง ป้องกันดีกว่าแก้</p>
+        <p class="text-[11px] text-gray-400 mt-2">ต้นแบบเพื่อการสาธิต - ข้อมูลจำลอง - ไม่ใช่การยืนยันตัวตนทางการ</p>
+    </div>
+</footer>
+
+</body>
+</html>
