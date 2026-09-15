@@ -9,13 +9,18 @@ const db = require('./db');
 const app = express();
 
 // ==========================================
-// ตั้งค่าระบบอัปโหลด (รองรับ Vercel)
+// ตั้งค่าระบบอัปโหลด (ใช้ /tmp บน Vercel โดยไม่ต้อง mkdir)
 // ==========================================
 const isVercel = process.env.VERCEL || process.env.NODE_ENV === 'production';
 const uploadDir = isVercel ? '/tmp' : path.join(__dirname, 'public', 'uploads');
 
+// ถ้าไม่ได้รันบน Vercel ค่อยเช็กและสร้างโฟลเดอร์
 if (!isVercel && !fs.existsSync(uploadDir)) {
-    fs.mkdirSync(uploadDir, { recursive: true });
+    try {
+        fs.mkdirSync(uploadDir, { recursive: true });
+    } catch (e) {
+        console.error(e);
+    }
 }
 
 const storage = multer.diskStorage({
