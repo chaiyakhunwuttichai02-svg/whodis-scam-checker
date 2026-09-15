@@ -7,6 +7,14 @@ const fs = require('fs');
 const db = require('./db'); 
 
 const app = express();
+// ดักจับกรณีที่มีคนเข้าหรือส่งค่ามาที่ /index.php ให้เด้งไปหน้าหลัก / ทันที พร้อมส่งค่าค้นหาติดไปด้วยถ้ามี
+app.get('/index.php', (req, res) => {
+    const searchQuery = req.query.search;
+    if (searchQuery) {
+        return res.redirect(`/?search=${encodeURIComponent(searchQuery)}`);
+    }
+    res.redirect('/');
+});
 
 // ==========================================
 // ตั้งค่าระบบอัปโหลด (ใช้ /tmp บน Vercel โดยไม่ต้อง mkdir)
